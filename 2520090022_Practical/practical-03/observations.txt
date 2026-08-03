@@ -1,0 +1,29 @@
+Aim:
+To observe process creation and process state transitions using fork().
+
+Commands Used:
+
+ps -el
+top
+cat /proc/<PID>/status
+
+Observations:
+
+1. Parent process creates a child using fork().
+2. Child enters Running state.
+3. Parent enters Waiting state after calling wait().
+4. Child terminates after sleep().
+5. Parent resumes execution after child termination.
+
+Process States Observed:
+
+Ready
+Running
+Waiting
+Terminated
+
+Linux Tools Used:
+
+1. ps
+2. top
+3. /proc

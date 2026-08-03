@@ -1,0 +1,32 @@
+Aim:
+To study multithreading using POSIX threads and synchronization using mutex locks.
+
+Commands Used:
+
+gcc race_condition.c -o race_condition -pthread
+./race_condition
+
+gcc mutex_lock.c -o mutex_lock -pthread
+./mutex_lock
+
+Observations:
+
+1. Multiple threads update a shared variable.
+2. Without synchronization, race conditions occur.
+3. The counter value may be incorrect in the race-condition program.
+4. Mutex locks allow only one thread to access the shared variable at a time.
+5. The synchronized program always produces the correct result.
+
+Comparison:
+
+Without Mutex:
+- Race condition occurs.
+- Output may vary.
+
+With Mutex:
+- No race condition.
+- Correct output every time.
+
+Conclusion:
+
+Mutex synchronization ensures data consistency and prevents race conditions in multithreaded programs.

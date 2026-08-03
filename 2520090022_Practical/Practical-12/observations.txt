@@ -1,0 +1,33 @@
+Aim:
+To implement the Producer-Consumer problem using semaphores and demonstrate deadlock prevention using resource ordering.
+
+Commands Used:
+
+gcc producer_consumer.c -o producer_consumer -pthread
+./producer_consumer
+
+gcc deadlock.c -o deadlock -pthread
+./deadlock
+
+Observations:
+
+1. Producer inserts items into the shared buffer.
+2. Consumer removes items from the buffer.
+3. Counting semaphores synchronize producer and consumer.
+4. Mutex protects the critical section.
+5. Resource ordering prevents deadlock by acquiring locks in the same order.
+
+Four Necessary Conditions for Deadlock:
+
+1. Mutual Exclusion
+2. Hold and Wait
+3. No Preemption
+4. Circular Wait
+
+Deadlock Prevention:
+
+Acquire shared resources in a fixed order to eliminate circular wait.
+
+Conclusion:
+
+Semaphores and mutexes ensure correct synchronization. Resource ordering effectively prevents deadlock.

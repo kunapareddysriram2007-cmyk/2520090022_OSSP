@@ -1,0 +1,3 @@
+Operating Systems Lab
+This is Practical-02.
+Linux System Calls

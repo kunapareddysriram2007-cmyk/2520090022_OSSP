@@ -1,0 +1,20 @@
+Aim:
+To integrate shell modules and implement runtime error handling.
+
+Commands Used:
+
+gcc skill-21.c -o skill-21
+./skill-21
+
+Observations:
+
+1. User commands are accepted through the shell.
+2. Commands are executed using fork() and execvp().
+3. Invalid commands generate runtime error messages.
+4. The shell continues execution after errors.
+5. Empty inputs are handled safely.
+6. Parent waits for child process completion.
+
+Conclusion:
+
+The program demonstrates module integration, command execution, runtime error detection, graceful recovery, and reliable shell operation.

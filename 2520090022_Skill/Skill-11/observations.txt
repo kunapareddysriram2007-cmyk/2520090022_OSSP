@@ -1,0 +1,20 @@
+Aim:
+To implement command history and basic pipeline parsing.
+
+Commands Used:
+
+gcc skill-11.c -o skill-11
+./skill-11
+
+Observations:
+
+1. Commands are stored in a history buffer.
+2. The history command displays stored commands.
+3. The oldest command is removed when the history buffer is full.
+4. Commands separated by the '|' symbol are recognized as a pipeline.
+5. Pipeline commands are parsed and displayed in execution order.
+6. The program validates the pipeline structure.
+
+Conclusion:
+
+The program demonstrates command history management and basic pipeline parsing similar to a Unix shell.

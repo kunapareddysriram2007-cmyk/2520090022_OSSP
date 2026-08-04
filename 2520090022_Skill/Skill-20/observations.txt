@@ -1,0 +1,20 @@
+Aim:
+To implement process suspension using SIGTSTP and process group management.
+
+Commands Used:
+
+gcc skill-20.c -o skill-20
+./skill-20
+
+Observations:
+
+1. SIGTSTP (Ctrl+Z) suspends the foreground process.
+2. The suspended process is preserved for later execution.
+3. SIGCONT resumes the suspended process.
+4. setpgid() creates a separate process group.
+5. waitpid() monitors the child process.
+6. The shell remains active while managing process groups.
+
+Conclusion:
+
+The program demonstrates process suspension, process groups, signal coordination, foreground control, and job state management.

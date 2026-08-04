@@ -1,0 +1,23 @@
+Aim:
+To implement combined redirection and execute commands using pipes with redirection.
+
+Commands Used:
+
+gcc skill-15.c -o skill-15
+./skill-15
+
+cat output.txt
+
+Observations:
+
+1. Standard output and standard error are redirected to the same file.
+2. dup2() duplicates file descriptors.
+3. A pipe connects two child processes.
+4. ls -l sends output through the pipe.
+5. grep .c filters C source files.
+6. Filtered output is appended to output.txt.
+7. Parent waits for both child processes.
+
+Conclusion:
+
+The program demonstrates combined redirection, descriptor duplication, pipeline execution, execution order, and command integration.

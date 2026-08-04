@@ -1,0 +1,20 @@
+Aim:
+To implement background job execution and job table management.
+
+Commands Used:
+
+gcc skill-16.c -o skill-16
+./skill-16
+
+Observations:
+
+1. Background processes are created using fork().
+2. The parent immediately returns to the shell prompt.
+3. Background job information is stored in a job table.
+4. waitpid() with WNOHANG monitors running jobs.
+5. Completed jobs are automatically removed.
+6. The jobs command displays all active background jobs.
+
+Conclusion:
+
+The program demonstrates background process execution, job tracking, process monitoring, and automatic cleanup of completed jobs.

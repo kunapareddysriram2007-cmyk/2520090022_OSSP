@@ -1,0 +1,21 @@
+Aim:
+To create a simple interactive shell loop that displays a prompt, reads user input, processes commands, and exits on request.
+
+Commands Used:
+
+gcc skill-02.c -o skill-02
+./skill-02
+
+Observations:
+
+1. The shell continuously displays the prompt "MyShell>".
+2. User input is read using fgets().
+3. Multi-character commands are accepted.
+4. Pressing Enter without input continues the loop.
+5. Typing "exit" terminates the program.
+6. Backspace editing is handled by the terminal.
+7. The input buffer stores commands entered by the user.
+
+Conclusion:
+
+The program demonstrates the basic interactive loop of a shell by reading keyboard input, processing commands, and handling exit conditions.

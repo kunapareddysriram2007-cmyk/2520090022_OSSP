@@ -1,0 +1,23 @@
+Aim:
+To implement input and output redirection using file descriptors.
+
+Commands Used:
+
+gcc skill-13.c -o skill-13
+./skill-13
+
+cat output.txt
+
+Observations:
+
+1. Input redirection reads data from input.txt.
+2. Missing files generate an error.
+3. stdin is redirected using dup2().
+4. stdout is redirected to output.txt.
+5. Output file is created automatically.
+6. Terminal input/output is restored after redirection.
+7. File contents are verified successfully.
+
+Conclusion:
+
+The program demonstrates Linux input and output redirection using open(), dup2(), and file descriptors.

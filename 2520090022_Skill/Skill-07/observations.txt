@@ -1,0 +1,20 @@
+Aim:
+To synchronize parent and child processes using waitpid() and locate executable commands using the PATH environment variable.
+
+Commands Used:
+
+gcc skill-07.c -o skill-07
+./skill-07
+
+Observations:
+
+1. PATH environment variable is retrieved using getenv().
+2. PATH directories are separated using strtok().
+3. execlp() searches executable files in PATH.
+4. waitpid() waits for the child process to terminate.
+5. Invalid commands generate an execution error.
+6. Parent process resumes after child completion.
+
+Conclusion:
+
+The program demonstrates child process synchronization using waitpid(), command searching through the PATH variable, executable resolution, and error handling.

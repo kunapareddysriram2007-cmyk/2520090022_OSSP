@@ -1,0 +1,25 @@
+Aim:
+To analyze process abstraction, understand fork() and exec(), inspect parent-child relationships, process tree, and system call tracing.
+
+Commands Used:
+
+gcc skill-01.c -o skill-01
+./skill-01
+
+pstree -p
+ps -ef
+strace ./skill-01
+
+Observations:
+
+1. fork() creates a child process.
+2. Parent and child have different PIDs.
+3. Child executes the ls -l command using exec().
+4. Parent waits for the child using wait().
+5. pstree displays the process hierarchy.
+6. ps shows parent-child relationships.
+7. strace displays all system calls executed by the program.
+
+Conclusion:
+
+fork() creates a new process, exec() replaces the child process image with a new program, and strace helps analyze interactions between user programs and the Linux kernel.

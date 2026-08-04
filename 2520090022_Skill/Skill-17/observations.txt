@@ -1,0 +1,20 @@
+Aim:
+To implement job listing and foreground job control.
+
+Commands Used:
+
+gcc skill-17.c -o skill-17
+./skill-17
+
+Observations:
+
+1. Background jobs are assigned unique job IDs.
+2. The jobs command displays all active jobs.
+3. Job ID, PID, command, and status are shown.
+4. The fg command selects a job by its ID.
+5. waitpid() waits until the selected job finishes.
+6. Completed jobs are removed from the active job list.
+
+Conclusion:
+
+The program demonstrates job listing, foreground switching, job monitoring, and process synchronization similar to a basic Unix shell.

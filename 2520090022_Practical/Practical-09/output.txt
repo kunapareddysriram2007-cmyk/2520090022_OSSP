@@ -1,2 +1,0 @@
-This line is redirected to output.txt
-Linux I/O Redirection using dup2().
